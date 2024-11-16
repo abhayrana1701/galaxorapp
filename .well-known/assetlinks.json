@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.galaxor",
+      "sha256_cert_fingerprints": [
+        "01:DB:36:01:DC:FF:5C:EE:B9:C9:4F:0A:43:F5:8F:F0:C5:1B:11:BA:A1:68:E6:7E:E7:9B:76:D2:46:70:F4:0C"
+      ]
+    }
+  }
+]
