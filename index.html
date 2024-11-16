@@ -4,46 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Galaxor - Explore Your Universe of Knowledge & Insights</title>
+    <title>Galaxor</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             background-color: #000000; /* Black background */
             color: #ffffff; /* White text */
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-        }
-
-        header {
-            background: url('https://www.nasa.gov/sites/default/files/thumbnails/space-galaxy.jpg') no-repeat center center fixed;
-            background-size: cover;
-            padding: 80px 0;
-            color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 60px;
             margin: 0;
-            color: #fff;
+            color: rgba(145, 0, 255, 1); /* Purple color */
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
         }
 
         p {
             font-size: 20px;
-            margin: 20px 0;
+            margin: 10px 0;
+            color: #ffffff;
             font-weight: 300;
         }
 
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .feature-box {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 250px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(145, 0, 255, 1);
+        }
+
+        .feature-box h3 {
+            color: rgba(145, 0, 255, 1);
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            color: #fff;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
         .button {
-            background-color: rgb(145, 0, 255); /* Purple color for buttons */
+            background-color: rgba(145, 0, 255, 1); /* Purple color */
             color: white;
             padding: 15px 30px;
-            font-size: 18px;
+            font-size: 20px;
             text-decoration: none;
             border-radius: 8px;
-            margin: 20px 0;
+            margin-top: 30px;
             transition: background-color 0.3s ease;
         }
 
@@ -51,84 +78,50 @@
             background-color: #7a00cc; /* Slightly darker on hover */
         }
 
-        .feature {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 40px;
+            }
 
-        .feature-box {
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            width: 280px;
-            margin: 20px;
-            text-align: left;
-            box-shadow: 0 0 15px rgba(0, 0, 255, 0.4);
-        }
+            p {
+                font-size: 16px;
+            }
 
-        .feature-box h3 {
-            font-size: 22px;
-            color: #91ff00;
-            margin-bottom: 10px;
-        }
+            .button {
+                padding: 12px 25px;
+                font-size: 18px;
+            }
 
-        .feature-box p {
-            font-size: 16px;
-            color: #fff;
+            .feature-box {
+                width: 80%;
+            }
         }
-
-        footer {
-            background-color: #111111;
-            color: #ccc;
-            padding: 30px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            font-size: 14px;
-            color: #aaa;
-        }
-
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Galaxor</h1>
-        <p>Your Universe of Knowledge, Insights, and Personal Growth</p>
-        <a href="#" class="button">Download the App</a>
-    </header>
+    <h1>Welcome to Galaxor</h1>
+    <p>Your Universe of Knowledge, Insights, and Personal Growth</p>
 
-    <section class="feature">
+    <div class="feature-container">
         <div class="feature-box">
             <h3>Upload Posts & Share Knowledge</h3>
-            <p>Share your thoughts with the world! Upload posts and engage in meaningful discussions.</p>
+            <p>Share your thoughts with the world and engage in meaningful discussions.</p>
         </div>
         <div class="feature-box">
             <h3>Ask & Answer Questions</h3>
-            <p>Get answers to your burning questions or help others by sharing your wisdom.</p>
+            <p>Get answers to your questions and help others with your wisdom.</p>
         </div>
         <div class="feature-box">
-            <h3>Track Attendance & Finance</h3>
-            <p>Track your attendance, monitor your spending, view your marks, manage assignments, and access your notes in visually appealing ways.</p>
+            <h3>Elemental Nebula</h3>
+            <p>Monitor your attendance, spending, marks, assignments, and notes in a creative and engaging way.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="download-section">
-        <h2>Ready to Start Your Journey?</h2>
-        <p>Download the Galaxor app now and unlock the power of knowledge and insights.</p>
-        <a href="#" class="button">Download the App</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Galaxor. All Rights Reserved. Explore Your Universe of Knowledge!</p>
-    </footer>
+    <a href="#" class="button">Download the App</a>
 
 </body>
 </html>
+
 
